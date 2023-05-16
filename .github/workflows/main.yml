@@ -1,0 +1,17 @@
+name: Ejecución de código
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ejecucion:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Verificar repositorio
+      uses: actions/checkout@v2
+
+    - name: Ejecutar código Python
+      run: python main.py
