@@ -10,7 +10,7 @@ def conversion(cantidad):
             try:
                 m = int(input("Ingrese minuto: "))
                 if m < 0:
-                    raise ValueError
+                    raise ValueError #Probar si da el mismo comportamiento con continue
                 break
             except ValueError:
                 print("Ingrese un número entero positivo para los minutos.")
